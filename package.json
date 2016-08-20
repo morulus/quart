@@ -1,0 +1,26 @@
+{
+  "name": "quart",
+  "version": "0.0.1",
+  "description": "API for build chrome extensions with remote methods between content and background",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava tests/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/morulus/chrominate.git"
+  },
+  "keywords": [
+    "chrome",
+    "extensions"
+  ],
+  "author": "Vladimir Kalmykov <vladimirmorulus@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/morulus/chrominate/issues"
+  },
+  "homepage": "https://github.com/morulus/chrominate#readme",
+  "devDependencies": {
+    "ava": "^0.16.0"
+  }
+}

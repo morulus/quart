@@ -17,7 +17,7 @@ Quart.methods({
 ```
 
 ## On background script
-```
+```js
 var Quart = require('quartirant').BackgroundScript;
 Quart.call('sayHello', ['Quart'], function(err, result) {
 	console.log('result'); // Hello, Quart

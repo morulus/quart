@@ -14,6 +14,7 @@ Quart.methods({
 		return 'Hello, '+name;
 	}
 })
+```
 
 ## On background script
 ```

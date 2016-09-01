@@ -8,7 +8,7 @@ Both scripts should to pre-build through webpack or another bundler.
 
 ## On content script
 ```js
-var Quart = require('quartirant').ContentScript;
+var Quart = require('quart').ContentScript;
 Quart.methods({
 	sayHello: function(name) {
 		return 'Hello, '+name;
@@ -18,7 +18,7 @@ Quart.methods({
 
 ## On background script
 ```js
-var Quart = require('quartirant').BackgroundScript;
+var Quart = require('quart').BackgroundScript;
 Quart.call('sayHello', ['Quart'], function(err, result) {
 	console.log('result'); // Hello, Quart
 });

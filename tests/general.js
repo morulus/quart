@@ -12,10 +12,23 @@ Content.methods({
     }
 });
 
-test("Call remote method", function(t) {
+test("Call remote content method", function(t) {
     t.plan(1);
     Background.call('testMyFit', ['Hello, '], function(err, result) {
         t.truthy(result==='Hello, World');
+    });
+});
+
+Background.methods({
+	testMyBack: function(leftPart) {
+		return leftPart+'Universe';
+	}
+});
+
+test("Call remote background method", function(t) {
+    t.plan(1);
+    Content.call('testMyBack', ['Hello, '], function(err, result) {
+        t.truthy(result==='Hello, Universe');
     });
 });
 

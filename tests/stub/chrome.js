@@ -21,6 +21,11 @@ global.chrome = {
 			addListener: function(fn) {
                 chrome.runtime._listeners.push(fn);
 			}
+		},
+		sendMessage: function(data, callback) {
+			chrome.runtime._listeners.forEach(function(fn) {
+				fn(data, {}, callback);
+			});
 		}
 	}
 }
